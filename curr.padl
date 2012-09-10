@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<binu ttl="3600" app="1082" developer="1">
+
+<styles>
+  <style name="body_text">
+    <color value="#FF000000"/>
+    <font face="Arial Unicode MS" size="12"/>
+  </style>
+  <style name="title_text">
+    <color value="#FF000000"/>
+    <font face="Arial Unicode MS" size="14"/>
+  </style>
+  <style name="tab_text">
+    <color value="#000000"/>
+    <font face="Arial Unicode MS" size="11"/>
+  </style>
+  <style name="read_header_text">
+    <color value="#000000"/>
+    <font face="Arial Unicode MS" size="11"/>
+  </style>
+  <style name="grey_line">
+    <color value="#FF9E9FA2"/>
+  </style>
+  <style name="black">
+    <color value="#000000"/>
+  </style>
+  <style name="bg_tab">
+    <color value="#bbbbbb"/>
+  </style>
+  <style name="footer_text">
+    <color value="#FF000000"/>
+  </style>
+  <style name="footer_bg">
+    <color value="#008888"/>
+  </style>
+  <style name="header_bg">
+    <color value="#008888"/>
+  </style>
+</styles>
+
+<page>
+
+<pageSegment x="0" y="0" >
+  <fixed>
+ </fixed>
+</pageSegment>
+<pageSegment x="0" y="0">
+  <fixed>
+    <text x="15" y="2" w="105 " style="title_text" mode="wrap">Observation</text>
+  </fixed>
+</pageSegment>
+
+<pageSegment x="0" >
+  <listing listName="listing1" type="simple">
+    <link name="url" x="2" y="0" mode="truncate" style="body_text" spider="N" >
+      <field name="text" w="width - 9" mode="wrap" style="body_text" align="left"/>
+    </link>
+  </listing>
+</pageSegment>
+</page>
+
+  <control textUTF8="true">
+     <footer barStyle="footer_bg" labelStyle="footer_text">
+<menu key="action" text="Menu">
+<action key="1" text="App Home" linkType="o">http://paste-blue.net/wund/index.padl</action>
+<action key="2" text="Home" linkType="o">http://apps.binu.net/apps/mybinu/index.php</action>
+</menu>
+<action key="navigate" spider="Y" text="Back" actionType="back" />
+
+     </footer>
+    <actions>
+    </actions>
+  </control>
+
+<list name="listing1">
+<listItem>
+  <itemField name="text" value="Adelaide"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Adelaide&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Brisbane"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Brisbane&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Canberra"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Canberra&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Darwin"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Darwin&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Hobart"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Hobart&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Melbourne"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Melbourne&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Perth"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Perth&amp;type=curr"/>
+</listItem>
+<listItem>
+  <itemField name="text" value="Sydney"/>
+  <itemField name="url" value="http://paste-blue.net/wund/report.php?country=Australia&amp;city=Sydney&amp;type=curr"/>
+</listItem>
+</list>
+</binu>
